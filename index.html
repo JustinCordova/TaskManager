@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <input type="text" id="myInput" placeholder="add"> <br>
+    
+    <input type="radio" value = "Might-Do" name="Type" id = "might">
+    <label for="might">Might-Do</label> <br>
+    <input type="radio" value = "To-Do" name="Type" id = "todo">
+    <label for="todo">To-Do</label> <br>
+    <input type="radio" value = "Done" name="Type" id="done">
+    <label for="done">Done</label> <br>
+    
+    <span onclick="addTask()" class="addBtn">Submit</span>
+    <div id="taskHeader">
+        <div class="t1-container">
+            <h1>Might-Do</h1>
+            <ul class="list" id="listMight">
+                <li> Go Grocery Shopping
+            </ul>
+        </div>
+
+        <div class="t2-container">
+            <h1>To-Do</h1>
+            <ul class="list" id = "listToDo">
+                <li> Go Christmas Shopping
+            </ul>
+        </div>
+        
+        <div class="t3-container">
+            <h1>Done</h1>
+            <ul class="list" id="listDone">
+                <li> Go Get Gas
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/script.js"></script>
+</html> 
